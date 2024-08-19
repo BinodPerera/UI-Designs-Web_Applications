@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Login Form</title>
+
+        <style>
+
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                border: 2px solid black;
+                padding: 10px;
+                border-radius: 7.5px;
+                max-width: 400px;
+                background-color:bisque;
+                box-shadow: 2px 2px 1px black;
+            }
+
+            form h2{
+                font-weight: bold;
+                font-family:monospace;
+            }
+
+            .content{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            input{
+                flex: 1 0 10rem;
+                min-width: 400px;
+                min-height: 30px;
+                padding: 5px;
+            }
+
+            input, button{
+                border: 1.5px solid black;
+                border-radius: 3px;
+                box-shadow: 2px 2px black;
+                font-family:monospace;
+            }
+
+            button{
+                font-weight: bold;
+            }
+
+            button:hover{
+                color: white;
+                background-color: black;
+                box-shadow: 2px 2px 5px black;
+            }
+
+            input:hover{
+                background-color: rgb(168, 169, 170);
+            }
+
+            .row-data{
+                font-family: monospace;
+                font-size: 0.8rem;
+                padding: 2.5px 0px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <form action="">
+                <h2>Login Form</h2>
+                <div class="content">
+                    <input type="text" placeholder="Enter username" id="">
+                    <input type="password" placeholder="Enter Password" id="">
+                    <button type="reset">clear</button>
+                    <button type="submit">Login</button>
+                </div>
+                <div class="row-data">
+                    Forget username or Password? <a href="">find account</a>
+                </div>
+                <div class="row-data">
+                    Don't have an account? <a href="">Create now</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
