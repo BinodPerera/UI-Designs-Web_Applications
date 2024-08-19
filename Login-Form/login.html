@@ -74,11 +74,12 @@
             <form action="">
                 <h2>Login Form</h2>
                 <div class="content">
-                    <input type="text" placeholder="Enter username" id="">
-                    <input type="password" placeholder="Enter Password" id="">
+                    <input type="text" placeholder="Enter username" id="username">
+                    <input type="password" placeholder="Enter Password" id="password">
                     <button type="reset">clear</button>
-                    <button type="submit">Login</button>
+                    <button type="submit" onclick="success()">Login</button>
                 </div>
+                <div id="message"></div>
                 <div class="row-data">
                     Forget username or Password? <a href="">find account</a>
                 </div>
@@ -86,6 +87,11 @@
                     Don't have an account? <a href="">Create now</a>
                 </div>
             </form>
+            <script>
+                function success(){
+                    document.getElementById('message').innerHTML = "login success!";
+                }
+            </script>
         </div>
     </body>
 </html>
